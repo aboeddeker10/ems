@@ -132,7 +132,7 @@ input[type="radio"]{
     margin-right: 0;
 }
 
-input[type="radio"]: :first-of-type{
+input[type="radio"]:first-of-type{
     margin-left: 0;
 }
 
