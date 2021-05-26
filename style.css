@@ -1,0 +1,243 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.jumbotron{
+    font-family: 'noto sans', Helvetica, sans-serif;
+    background: url(../EMS/static/hero_background_update.png);
+    background-size: cover;
+    color: white;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    
+}
+
+.jumbotron h1{
+    font-weight: bold;
+    font-size: 5em;
+}
+
+/* .overlay {
+    position: absolute;
+    margin-top: 6.5%;
+    min-height: 90%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+} */
+
+/* .services2 {
+    text-align: center;
+} */
+
+.container{
+    text-align: center;
+}
+.service_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.card-img-top{
+    max-width: 286px;
+    max-height: 160.66px;
+}
+#contact_section h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.card {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* .form{
+    box-sizing: border-box;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+} */
+
+/* input[type=text]{
+    padding: 10px;
+    margin: 10px 0;
+}
+
+input[type=email]{
+    padding: 10px;
+    margin: 10px 0;
+} */
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+.checks label {
+    margin-top: 0;
+}
+
+label:first-of-type{
+    margin-top: 0;
+}
+
+#fs-frm{
+    /* margin: 2em 2em; */
+    padding: 1em 2em;
+    border: 3px solid black;
+    border-radius: 3px;
+    min-width: 200px;
+}
+
+input {
+    padding: .5em;
+    border: 1px solid black;
+}
+
+input[type="email"], input[type="text"]{
+    width: 15em;
+}
+
+textarea{
+    min-height: 8em;
+    min-width: 100%;
+    padding: 0.5em;
+    border: 1px solid black;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input[type="radio"]{
+    margin-left: 1.5em;
+    margin-right: 0;
+}
+
+input[type="radio"]: :first-of-type{
+    margin-left: 0;
+}
+
+.checks p{
+    margin-top: 1em;
+}
+
+input[type="submit"]{
+    border-radius: 6px;
+    background-color: lightskyblue;
+}
+
+/* Large Screen Rules */
+@media screen and (min-width: 430px){
+    #fs-frm-inputs{
+        width: 40%;
+        min-width: 400px;
+    }
+    .checks label{
+        display: inline-block;
+        padding-top: 0.5em;
+        margin-top: 0;
+        margin-right: 0.5em;
+    }
+}
+
+/* Small Screen Rules */
+@media screen and (max-width: 481px){
+    input[type="radio"] and label{
+        display: block;
+        padding-top: 0.5em;
+        margin-top: 0;
+    }
+}
+
+.reviews{
+    text-align: center;
+    margin-top: 3em;
+}
+
+
+/*Testimonials*/
+
+.align-center {
+    text-align: center;
+}
+.hash-list {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .hash-list.cols-3 > li:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+}
+@media (min-width: 768px){
+    .hash-list.cols-3 > li {
+        width: 33.3333%;
+    }
+}
+.hash-list > li {
+    display: block;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pad-30, .pad-30-all > * {
+    padding: 30px;
+}
+img {
+    border: 0;
+}
+.mgb-20, .mgb-20-all > * {
+    margin-bottom: 20px;
+}
+.wpx-100, .wpx-100-after:after {
+    width: 100px;
+}
+.img-round, .img-rel-round {
+    border-radius: 50%;
+}
+.padb-30, .padb-30-all > * {
+    padding-bottom: 30px;
+}
+
+.mgb-40, .mgb-40-all > * {
+    margin-bottom: 40px;
+}
+.align-center {
+    text-align: center;
+}
+[class*="line-b"] {
+    position: relative;
+    padding-bottom: 20px;
+    border-color: #E6AF2A;
+}
+.fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
+    color: #222;
+}
+.font-cond-b {
+    font-weight: 700 !important;
+}
+
+.review_title{
+    margin-top: 3em;
+}
+
+.review_title2{
+    margin-top: 1em;
+}

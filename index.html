@@ -3,49 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Electrical Master System</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="wrapper">
-        <div class="hero">
-            <h1>Electrical Master System</h1>
-            <h4>Your reliable neighborhood electrical service, no job is too big or too small</h4>
-        </div>
-        <div class="services">
-            <div class="left_side">
-                <h2>Services</h2>
-                <ul>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, nihil.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, nihil.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, nihil.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, nihil.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, nihil.</li>
+    
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="../EMS/ems.png" alt="ems logo" class="rounded-circle" width="60px" height="auto"></a>
+            <div class="navbar" id="navbarNav">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact_section">Contact</a>
+                    </li>
                 </ul>
             </div>
-            <div class="right_side">
-                <img src="" alt="">
+    <div class="container">    
+            </nav>
+        <div class="jumbotron text-center">
+            <div class="overlay">
+                <h1>Electrical Master System</h1>
+                <h4><small>Your reliable neighborhood electrical service, no job is too big or too small</small></h4>
             </div>
         </div>
+        <div class="services container">
+            <h2 class="font-weight-bold">Services</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../EMS/static/commercial_image.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Commercial</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../EMS/static/residential_image.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Residential</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../EMS/static/other_image.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Other</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+        <div id="contact_section">
+            <h2 class="font-weight-bold">Contact</h2>
+            <div class="form">
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myylwgjj" method="post">
+                    <fieldset id="fs-frm-inputs">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" required="">
+                        <div class="checks">
+                            <p>Preferred method of contact:</p>
+                            <input type="radio" name="contact" id="contactEmail" value="email">
+                            <label for="contactEmail">Email</label>
 
-        <div class="Contact">
-            <div class="left_side">
-                <h4>Phone #</h4>
-                <h4>Email</h4>
+                            <input type="radio" name="contact" id="contactPhone" value="phone">
+                            <label for="contactPhone">Phone Call</label>
+
+                            <input type="radio" name="contact" id="textMessage" value="textMessage">
+                            <label for="textMessage">Text message</label>
+
+                        </div>
+                        <label for="message">Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
             </div>
-            <div class="right_side">
-                <img src="" alt="">
-            </div>
+            
         </div>
 
-        <div>
-            <h2>What Our Satisfied Customers Are Saying</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis obcaecati sapiente voluptatibus. Possimus placeat pariatur recusandae quod, cupiditate similique odio, qui tempora adipisci amet nam!</p>
+        
+        
+
+        <!--Testimonials-->
+
+        <div class="container">
+            <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
+                <h4 class="font-cond-l fg-accent lts-md mgb-10 review_title" contenteditable="false">Not Yet Convinced?</h4>
+                <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg review_title2" contenteditable="false">Read Customer Reviews</h1>
+            </div>
+            <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+                <li>
+                <img src="../EMS/static/Andrew thumbnail.png" class="wpx-100 img-round mgb-20" title="Andrew customer review" alt="satisfied customer review">
+                <p class="fs-110 font-cond-l" contenteditable="false">" Benny was incredible. Extremely efficient and always available, even on the weekends. That's what really sets him apart.  The other two electricians we called, either didn't pick up or answered, but never followed back up with us. Benny won our business and did fantastic, quick work like we needed. Thanks! "</p>
+                <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Andrew B.</h5>
+                <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Rochester, MN</small>
+                </li>
+                <li>
+                <img src="../EMS/static/deb.PNG" class="wpx-100 img-round mgb-20" title="" alt="">
+                <p class="fs-110 font-cond-l" contenteditable="false">Benny was great!  He figured out the issues immediately and work was completed in minutes.  Very nice and explained everything he did. Would definitely call on him again.</p>
+                <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Deb W.</h5>
+                <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Rochester, MN</small>
+                </li>
+                <li>
+                <img src="../EMS/static/dude.PNG" class="wpx-100 img-round mgb-20" title="Michael review" alt="satisfied customer review" >
+                <p class="fs-110 font-cond-l" contenteditable="false">Beny was fantastic! Friendly, professional, listened to our requests and was just perfect. Will absolutely do business with again for any and all electrical needs! Happy customer for life!</p>
+                <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Michael H.</h5>
+                <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Wink, TX</small>
+                </li>
+            </ul>
         </div>
 
-
+        
     </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
