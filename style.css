@@ -11,12 +11,14 @@
     font-family: 'noto sans', Helvetica, sans-serif;
     background: url(./static/hero_background_update.png);
     background-size: cover;
-    color: white;
+    color: rgb(0,200,0);
     padding-top: 20%;
     padding-bottom: 20%;
     
 }
-
+.overlay h4{
+    color: rgb(233,222,39);
+}
 .jumbotron h1{
     font-weight: bold;
     font-size: 5em;
@@ -49,6 +51,32 @@
     max-width: 286px;
     max-height: 160.66px;
 }
+
+/*Contact*/
+.meet_benny{
+    margin-top: 4em;
+    /* display: flex; */
+}
+
+@media screen and(max-width: 768px){
+    .bennyInfoSection{
+        display: flex;
+    }
+    .sideSplit{
+        flex-direction: column;
+    }
+}
+
+.bennyInfoSection{
+    margin-top: 4em;
+}
+/* .sideSplit{
+    max-height: 75px;
+} */
+
+/* .leftSide{
+    margin-top: 45px;
+} */
 #contact_section h2{
     text-align: center;
     margin-top: 50px;
