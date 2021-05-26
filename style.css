@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+.call_phone{
+    color: rgb(0,0,230);
+}
+
 .jumbotron{
     font-family: 'noto sans', Helvetica, sans-serif;
     background: url(../EMS/static/hero_background_update.png);
