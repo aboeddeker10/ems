@@ -24,6 +24,10 @@
     font-size: 5em;
 }
 
+.font-weight-bold{
+color: rgb(0,200,0);
+}
+
 /* .overlay {
     position: absolute;
     margin-top: 6.5%;
@@ -41,12 +45,16 @@
 .container{
     text-align: center;
 }
-.service_wrapper {
+/* .service_wrapper {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
-}
+} */
 
+.service-title{
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+}
 .card-img-top{
     max-width: 286px;
     max-height: 160.66px;
@@ -87,6 +95,10 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
 }
 
 
